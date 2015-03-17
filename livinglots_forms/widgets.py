@@ -53,7 +53,10 @@ class AddAnotherWidgetWrapper(forms.Widget):
         return self.widget.value_from_datadict(data, files, name)
 
     def _has_changed(self, initial, data):
-        return self.widget._has_changed(initial, data)
+        try:
+            return self.widget._has_changed(initial, data)
+        except AttributeError:
+            return False
 
     def id_for_label(self, id_):
         return self.widget.id_for_label(id_)
