@@ -1,7 +1,7 @@
 django-livinglots-forms
 =======================
 
-A set of forms helpers for projects that use 596 Acres' Living Lots.
+A set of forms helpers for projects that use 596 Acres' ® Living Lots ®.
 
 
 License
